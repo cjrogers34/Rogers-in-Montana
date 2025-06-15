@@ -39,6 +39,33 @@
   <div style="display: block; margin-bottom: 40px;">
   <img src="pdf_image_p1_3.jpeg" alt="Trip Logo" style="display: block; margin: 0 auto; max-width: 100%;">
 </div>
+  
+<div id="countdown" style="text-align:center; font-size: 1.2em; font-weight: bold; margin-bottom: 20px;"></div>
+<script>
+  const targetDate = new Date("2025-07-06T00:00:00").getTime();
+  const countdownEl = document.getElementById("countdown");
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      countdownEl.innerHTML = "It's vacation time!";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    countdownEl.innerHTML = `Countdown to Big Sky: ${days} days, ${hours} hours, ${mins} minutes, ${secs} seconds`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
   <h1>Rogers Family Vacation</h1>
   <p><strong>Location:</strong> Big Sky, Montana<br>
      <strong>Dates:</strong> July 6–11, 2025</p>
