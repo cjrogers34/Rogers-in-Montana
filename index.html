@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rogers Family Vacation – Montana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 2em;
+    }
+    img {
+      width: 100%;
+      margin-top: 1em;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align: center; margin-bottom: 40px;">
+    <img src="montana-trip-logo.png" alt="Montana Trip Logo" style="max-width: 300px;">
+  </div>
+
+  <div id="countdown" style="text-align:center; font-size: 1.2em; font-weight: bold; margin-bottom: 20px;"></div>
+  <script>
+    const targetDate = new Date("2025-07-06T00:00:00").getTime();
+    const countdownEl = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        countdownEl.innerHTML = "It's vacation time!";
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      countdownEl.innerHTML = `Countdown to Big Sky: ${days} days, ${hours} hours, ${mins} minutes, ${secs} seconds`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+
+  <h1>Rogers Family Vacation</h1>
+  <p><strong>Location:</strong> Big Sky, Montana<br>
+     <strong>Dates:</strong> July 6–11, 2025</p>
+
+  <div class="section">
+    <h2>✈️ Flight Itinerary</h2>
+    <p><strong>July 6:</strong> DFW ➡ Bozeman (BZN), AA 952 @ 8:00 AM — Arrive 10:09 AM<br>
+    <strong>July 11:</strong> Bozeman (BZN) ➡ DFW, AA 947 @ 3:58 PM — Arrive 8:00 PM<br>
+    <em>Seats:</em> 18E/F, 19D/E/F</p>
+  </div>
+
+  <div class="section">
+    <h2>🏠 Our Big Sky VRBO</h2>
+    <p>Address: 3 Swift Bear Rd, Big Sky, MT 59716<br>
+    <a href="https://www.vrbo.com/2745344" target="_blank">View VRBO Listing</a></p>
+    <p>This luxury VRBO offers mountain views, plenty of space, multiple bedrooms and bathrooms, and an ideal base for all our activities.</p>
+    <img src="pdf_image_p1_1.jpeg" alt="Big Sky VRBO 1">
+    <img src="pdf_image_p1_2.jpeg" alt="Big Sky VRBO 2">
+  </div>
+
+  <div class="section">
+    <h2>🌄 July 6 – Arrival Day Options (Bozeman)</h2>
+    <p><strong>Béquet Confections:</strong> Award-winning, handcrafted caramels made in Bozeman using all-natural ingredients. Gluten-free, kosher, and nut-free. Flavors like Celtic Sea Salt and Salt-Chocolate are local favorites. <a href="https://bequetconfections.com" target="_blank">Visit site</a></p>
+
+    <p><strong>Montana Grizzly Encounter:</strong> A rescue sanctuary offering up-close views of grizzly bears in a safe, naturalistic environment. Perfect for families, with educational signage and photo ops. It’s a great ~45-minute stop on your way to or from Big Sky. <a href="https://www.grizzlyencounter.org">Visit site</a></p>
+
+    <p><strong>Gallatin County Pioneer Museum:</strong> Explore local history through pioneer-era exhibits, housed in the old county jail. <a href="https://www.gallatinhistorymuseum.org">Visit site</a></p>
+
+    <p><strong>MacKenzie River Pizza Lodge:</strong> Cozy, family-style lodge with hearty pizzas and Montana-inspired ambiance. <a href="https://www.tripadvisor.com/Restaurant_Review-g45095-d514812-Reviews-MacKenzie_River_Pizza-Bozeman_Montana.html">Visit site</a></p>
+
+    <p><strong>Sweet Peaks Ice Cream:</strong> Handmade, locally sourced ice cream—a perfect post-travel treat. <a href="https://www.sweetpeaksicecream.com/bozeman">Visit site</a></p>
+
+    <p><strong>Treeline Coffee Roasters:</strong> Mountain-born and women-owned—great coffee and pastries in a bright café. <a href="https://treelinecoffee.com">Visit site</a></p>
+
+    <p><strong>Bozeman Hot Springs:</strong> Relax in 9–12 pools (indoors/outdoors, 59–106°F) with saunas and live music cues. <a href="https://bozemanhotsprings.co">Visit site</a></p>
+
+    <p><strong>Bunkhouse Brewery (Four Corners):</strong> Casual evening spot with craft beers, peanuts, and live events like open-mic and trivia. <a href="https://www.bunkhousebrewery.com">Visit site</a></p>
+  </div>
+
+  
+  <div class="section">
+    <h2>📅 Confirmed Activity – July 7</h2>
+    <p><strong>Gallatin River Ziplining</strong><br>
+    <strong>Time:</strong> 11:00 AM<br>
+    <strong>Location:</strong> Montana Whitewater – Gallatin<br>
+    63960 Gallatin Rd, Gallatin Gateway, MT, USA</p>
+    <p>Confirmed for Chris, Cole, Carli, and Chase. Sara is sitting this one out! This family-friendly zipline adventure takes place along the scenic Gallatin River, in an area famous for its appearance in <em>A River Runs Through It</em>. The tour includes tree platforms 55 feet high, two zips across the river, and sky bridges. The Super Zip option adds swinging wooden bridges and an optional cargo net climb. Max participant weight is 260 lbs.</p>
+    <p><a href="https://www.viator.com/tours/Big-Sky/Gallatin-Ziplining/d50777-15799P5?mcid=56757" target="_blank">More on Viator</a> |
+    <a href="https://www.montanawhitewater.com" target="_blank">Visit Montana Whitewater</a></p>
+  <img src="pdf_image_p4_1.jpeg" alt="Gallatin Zipline" style="margin-top: 1em;">
+  </div>
+
+<div class="section">
+    <h2>📅 Confirmed Activity – July 8</h2>
+    <p><strong>VIP Private Yellowstone Tour:</strong> Visit Grand Prismatic Spring, Fountain Paint Pot, Firehole Lake Drive, and Firehole Canyon Drive. Includes gourmet picnic lunch, spotting scopes, binoculars, and take-home wildlife video. Entry fees, gratuities, and a personalized family-friendly guide experience are all included. <a href="https://www.viator.com/tours/West-Yellowstone/Private-Tours-of-Yellowstone-National-Park-Gourmet-picnic-lunch-included/d50636-151830P1">View tour</a><br>Please take a look at this form and let me know what your Lunch order is:<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSfWIMXLrSUz-jjrF7C650LNPD2DyY1QDxACYlFIEh1yn_MH1g/viewform" target="_blank">Yellowstone Lunch Order Form</a></p>
+    <img src="pdf_image_p3_1.jpeg" alt="Yellowstone Tour">
+  </div>
+  <div class="section">
+    <h2>📅 Confirmed Activity – July 9</h2>
+    <p><strong>Gallatin River Fly Fishing – Half-Day Walk & Wade:</strong> 4-hour guided trip starting at 1:00 PM. Includes all gear and instruction on some of the most scenic stretches of the Gallatin River. Meet at the fly shop in Big Sky. <a href="https://www.montanaflyfishing.com/" target="_blank">Trip info</a></p>
+  </div>
+
+  <div class="section">
+    <h2>🎣 Gallatin River Fly Fishing — Half-Day Walk & Wade</h2>
+    <p><strong>Date & Time:</strong> July 9 at 1:00 PM</p>
+    <p><strong>Location:</strong> Gallatin River (meet at their fly shop in Big Sky)</p>
+    <p>This 4-hour guided walk-and-wade trip puts you on some of the most scenic water in Montana. Whether you’re brand new or an experienced angler, their low guide-to-client ratio makes for a personalized adventure. Expect instruction, local hatch knowledge, and a real taste of the Montana fly fishing lifestyle.</p>
+    <ul>
+      <li><strong>Duration:</strong> 4 hours (door to door)</li>
+      <li><strong>Included:</strong> Guide service, flies, waders, gear, fly rod/reel</li>
+      <li><strong>Not Included:</strong> MT fishing license, guide gratuity (~20%), 4% resort tax, $2 booking fee</li>
+      <li><strong>Age:</strong> 11+ recommended (younger kids can do a 2-hour pond trip)</li>
+      <li><strong>Price:</strong> $580 for 2 anglers (peak season rate)</li>
+    </ul>
+    <p><a href="https://www.montanaflyfishing.com/" target="_blank">More info at montanaflyfishing.com</a></p>
+    <img src="86f2e9d9-2b95-4a3a-a4e4-7fb8fbf46edc.png" alt="Gallatin Fly Fishing" style="margin-top: 1em;">
+  </div>
+
+  <div class="section">
+    <h2>🌿 Other Montana Adventures</h2>
+
+  <p><strong>Cache Creek Outfitters – Horseback Riding:</strong> Offers full-day, half-day, and two-hour guided rides through the scenic beauty of Montana and Yellowstone’s northwest corner. Whether you're a first-time rider or an expert, they carefully match each guest to the right horse. As Ronald Reagan once said, “There’s nothing better for the soul of a man than the outside of a horse.” <a href="https://cachecreekoutfitters.com/riding-trips/" target="_blank">Visit site</a></p>
+  <img src="cache-creek-river-horses.png" alt="Cache Creek horseback riders crossing a river" style="width:100%; margin-top:1em; border-radius:8px;">
+</div>
+
+
+  <div class="section">
+    <h2>🌤️ Current Weather – Big Sky, MT</h2>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/45d27n111d30/big-sky/" data-label_1="BIG SKY" data-label_2="WEATHER" data-theme="pure">BIG SKY WEATHER</a>
+  </div>
+  <script>
+  !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){
+      js=d.createElement(s);
+      js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  }(document,'script','weatherwidget-io-js');
+  </script>
+
+
+  <div class="section">
+    <h2>🌤️ Current Weather – Big Sky, MT</h2>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/45d27n111d30/big-sky/"
+       data-label_1="BIG SKY" data-label_2="WEATHER" data-theme="pure">BIG SKY WEATHER</a>
+  </div>
+  <script>
+  !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){
+      js=d.createElement(s);
+      js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+      fjs.parentNode.insertBefore(js,fjs);
+    }
+  }(document,'script','weatherwidget-io-js');
+  </script>
+
+</body>
+</html>
